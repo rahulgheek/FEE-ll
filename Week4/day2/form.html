@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form{
+            background-color: rgb(9, 64, 95);
+            background: linear-gradient(135deg,rgb(16, 81, 119),rgb(2, 38, 59));
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 10px black;
+            transition: 0.5s;
+        }
+        form:hover{
+            margin-top: -10px;
+            box-shadow: 4px 14px 20px rgba(0,0,0,7);
+        }
+        form label,form input,form select{
+            padding: 2px;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="submit">
+        <label>F Name.</label>
+        <input type="text" name="F Name." required><br>
+        <label>L Name.</label>
+        <input type="text" name="L Name." required><br>
+        <label>Email</label>
+        <input type="email" name="email" required><br>
+        <label>Password</label>
+        <input type="password" name="password" required><br>
+        <label></label>
+        <label>Gender: </label>
+        <input type="radio" name = "Gender" value="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" value="female" name="Gender" id="female">
+        <label for="female">Female</label><br>
+
+        <label>Country</label>
+        <select name="Country" id="">
+            <option value="">India</option>
+            <option value="">USA</option>
+            <option value="">Russia</option>
+            <option value="">Japan</option>
+        </select><br>
+
+        <center><input type="submit"></center>
+    </form>
+</body>
+</html>
+
+<!--  
+
+CSS display Properties ->
+(1) block
+(2) inline
+(3) inline block
+(4) flex
+
+Position Properties ->
+1) static
+2) sticky
+3) absolute
+4) relative
+5) fixed
+
+-->

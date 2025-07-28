@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: rgb(10,10,10);
+        }
+        header,.logo,.search,.signin{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        header{
+            width: 100%;
+            height: 10vh;
+        }
+        .fa-bars{
+            font-size: 20px;
+        }
+        .logo{
+            width: auto;
+            justify-content: flex-start;
+        }
+        .logo .fa-bars{
+            transform: translateX(-20px);
+            padding: 5px;
+
+        }
+        .logo .fa-bars:hover{
+            background-color: rgba(255,255,255,.2);
+            border-radius: 50%;
+        }
+        
+        .search{
+            background-color: none;
+            width: 40%;
+            height: 5vh;
+            border-radius: 40px;
+            border: 1px solid white;
+        }
+        .search input{
+            width: 450px;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+        }
+        
+        .search i.fa-microphone{
+            font-size: 19px;
+            transform: translateX(50px);
+            padding: 8px 10px;
+            background: rgba(255,255,255,.2);
+            border-radius: 50%;
+        }
+
+        .search i.fa-search{
+            transform: translateX(20px);
+        }
+
+        .signin{
+            width: 15%;
+            height: 5vh;
+        }
+        .signin i.fa-ellipsis-v{
+            padding: 8px 15px;
+            border-radius: 50%;
+        }
+        .signin i.fa-ellipsis-v:hover{
+            background: rgba(255,255,255,.2);
+        }
+
+        .signin .sign{
+            width: 60%;
+            height: 5vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 20px;
+            border: 1px solid white;
+        }
+        .signin .sign i.fa-user{
+            border: 1px solid white;
+            padding: 2px;
+            border-radius: 50%;
+        }
+        nav{
+            width: 20%;
+            padding: 20px;
+            height: 90vh;
+            overflow-y: scroll;
+            position: fixed;
+        }
+        nav ul{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        nav ul li{
+            width: 90%;
+            list-style: none;
+            height: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        nav ul li:hover{
+            background: rgba(255,255,255,.1);
+        }
+        hr{
+            margin-top: 30px;
+        }
+        nav ul li span{
+            margin-left: 30px;
+            font-size: 18px;
+        }
+
+        section{
+            width: 80%;
+            height: 90vh;
+            float: left;
+            margin-left: 20%;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .home{
+            width: 100%;
+            height: 45vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3.3%;
+        }
+        .home .item{
+            width: 30%;
+            position: relative;
+        }
+        .home img{
+            width: 100%;
+            height:70%;
+            border-radius: 20px;
+        }
+        .home .info{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .home .info img{
+            width: 40px;
+            height:40px;
+            border-radius: 50%;
+        }
+        .home .info .para{
+            width: 80%;
+        }
+        .home .info .para h1{
+            font-size: 18px;
+        }
+        .home .info .para p{
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <i class="fas fa-bars"></i>
+            <i class="fab fa-youtube" style="color:red;"></i>
+            <h4>YOUTUBE</h4>
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </form>
+
+            <i class="fas fa-microphone"></i>
+        </div>
+
+        <div class="signin">
+            <i class="fas fa-ellipsis-v"></i>
+            <div class="sign">
+                <i class="fas fa-user"></i>
+                <span>Sign in</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+    <span></span>
+    <ul>
+        <li><i class="fas fa-home"></i><span>Home</span></li>
+        <li><i class="fas fa-bolt"></i><span>Shorts</span></li>
+        <li><i class="fas fa-photo-video"></i><span>Subscription</span></li>
+    </ul>
+    <hr>
+    <ul>
+        <li>You</li>
+        <li><i class="fas fa-history"></i><span>History</span></li>
+        <li><i class="fas fa-list"></i><span>Playlist</span></li>
+        <li><i class="fas fa-clock"></i><span>Watch Later</span></li>
+        <li><i class="fas fa-thumbs-up"></i><span>Liked Video</span></li>
+    </ul>
+    <hr>
+    <ul>
+        <span>Explore</span>
+        <li><i class="fas fa-fire"></i><span>Trending</span></li>
+        <li><i class="fas fa-shopping-bag"></i><span>Shopping</span></li>
+        <li><i class="fas fa-music"></i><span>Music</span></li>
+        <li><i class="fas fa-film"></i><span>Movies</span></li>
+        <li><i class="fas fa-broadcast-tower"></i><span>Live</span></li>
+        <li><i class="fas fa-gamepad"></i><span>Gaming</span></li>
+        <li><i class="fas fa-basketball-ball"></i><span>Sports</span></li>
+        <li><i class="fas fa-clapperboard"></i><span>Movies</span></li>
+    </ul>
+    <hr>
+</nav>
+
+<section>
+    <div class="home">
+        <div class="item">
+            <img src="/download.jpg" alt="">
+            <div class="info">
+                <img src="/download (1).jpg" alt="">
+                <p style="position: absolute; bottom: 25%; background-color: rgba(0,0,0,.7); padding: 2px; border-radius: 5px; right: 10px;">2:40</p>
+                <div class="para">
+                    <h1>Beautiful Landscape</h1>
+                    <p>Killer</p>
+                    <p><span>27 views</span><span> 1 day ago</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/download.jpg" alt="">
+            <div class="info">
+                <img src="/download (1).jpg" alt="">
+                <p style="position: absolute; bottom: 25%; background-color: rgba(0,0,0,.7); padding: 2px; border-radius: 5px; right: 10px;">2:40</p>
+                <div class="para">
+                    <h1>Beautiful Landscape</h1>
+                    <p>Killer</p>
+                    <p><span>27 views</span><span> 1 day ago</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/download.jpg" alt="">
+            <p style="position: absolute; bottom: 25%; background-color: rgba(0,0,0,.7); padding: 2px; border-radius: 5px; right: 10px;">2:40</p>
+            <div class="info">
+                <img src="/download (1).jpg" alt="">
+                <div class="para">
+                    <h1>Beautiful Landscape</h1>
+                    <p>Killer</p>
+                    <p><span>27 views</span><span> 1 day ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shorts">
+        
+    </div>
+</section>
+</body>
+</html>

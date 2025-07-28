@@ -1,0 +1,1 @@
+target attribute is used for loading the page on the new tab instead of loading the page on same site

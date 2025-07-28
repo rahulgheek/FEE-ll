@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 10vh;
+            background-color: rgb(10,10,10);
+            color: white;
+        }
+        header ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 10%;
+        }
+        header ul li{
+            list-style: none;
+        }
+        header ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        section{
+            width: 70%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 90vh;
+            position: absolute;
+        }
+        aside{
+            width: 30%;
+            height: 90vh;
+            background-color: aqua;
+            position: absolute;
+            margin-left: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow-y: scroll;
+            gap: 50vh;
+        }
+        article{
+            width: 80%;
+            height: 20%;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 20px;
+        }
+        section p{
+            width: 80%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Hello World</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="task1.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusamus sit perspiciatis, magnam sunt error debitis molestias eaque ratione architecto aspernatur, tempore iure! Eligendi ullam earum omnis sed libero est quaerat repellendus dolor explicabo aut ut quam sunt optio odio voluptas, temporibus dignissimos nemo quia quibusdam voluptate similique voluptatum nam provident! Quia impedit modi omnis aliquid commodi, ipsum quod, quidem ea molestiae assumenda molestias ullam consequuntur ex nesciunt non voluptas dolorum, maxime quaerat aut fugiat nostrum qui excepturi? Dolores, harum et. Inventore saepe et provident magni voluptas illo. Excepturi harum distinctio veniam. Accusantium eos ipsa ex provident error natus corporis?</p>
+
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusamus sit perspiciatis, magnam sunt error debitis molestias eaque ratione architecto aspernatur, tempore iure! Eligendi ullam earum omnis sed libero est quaerat repellendus dolor explicabo aut ut quam sunt optio odio voluptas, temporibus dignissimos nemo quia quibusdam voluptate similique voluptatum nam provident! Quia impedit modi omnis aliquid commodi, ipsum quod, quidem ea molestiae assumenda molestias ullam consequuntur ex nesciunt non voluptas dolorum, maxime quaerat aut fugiat nostrum qui excepturi? Dolores, harum et. Inventore saepe et provident magni voluptas illo. Excepturi harum distinctio veniam. Accusantium eos ipsa ex provident error natus corporis?</p>
+    </section>
+    <aside>
+        <article>
+            <h1>blog</h1>
+        </article>
+        <article>
+            <h1>blog</h1>
+        </article>
+        <article>
+            <h1>blog</h1>
+        </article>
+        <article>
+            <h1>blog</h1>
+        </article> 
+    </aside>
+</body>
+</html>
