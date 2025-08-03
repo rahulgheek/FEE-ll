@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(216, 216, 216);
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+        }
+        header{
+            width: 100%;
+            position: absolute;
+            height: 10vh;
+            justify-content: space-around;
+            box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.4);
+            background-color: white;
+        }
+        .logo{
+            justify-content: center;
+            gap: 20px;
+        }
+        .logo img{
+            width: 80px;
+        }
+
+        ul{
+            width: 50%;
+            justify-content: space-between;
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li a{
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(0, 0, 78);
+        }
+
+        section.travel-intro{
+            width: 96%;
+            margin-top: 14vh;
+            position: absolute;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(233, 232, 232);
+        }
+        main{
+            width: 100%;
+            background-color: rgb(57, 146, 247);
+            color:white;
+            height: 50vh;
+            justify-content: center;
+        }
+
+        main .info{
+            flex-direction: column;
+            justify-content: center;
+            width: 60%;
+        }
+
+        .info h1,.info p{
+            width: 80%;
+        }
+        .info h1{
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+        .info p{
+            font-size: 20px;
+        }
+
+        main img{
+            width: 30%;
+        }
+
+        .container{
+            width: 90%;
+            margin-top: 70px;
+            flex-direction: column;
+            height: 60vh;
+        }
+
+        .container h1{
+            font-size: 30px;
+            color: rgb(44, 44, 44);
+        }
+
+        .container table{
+            margin-top: 30px;
+            width: 75%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 12px;
+            font-size: 24px;
+        }
+        th{
+            background-color: rgb(57, 146, 247);
+            color: white;
+        }
+        td{
+            background-color: white;
+        }
+        tr:nth-child(2) td{
+            background-color: rgb(216, 216, 216);
+        }
+
+        .quote{
+            width: 100%;
+            background: rgb(35, 1, 90);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            height: 30vh;
+        }
+        .quote i{
+            text-align: center;
+            font-size: 40px;
+            width: 70%;
+        }
+        .quote p{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .video-exp{
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .video-exp h1{
+            font-size: 40px;
+        }
+        .video-exp video{
+            width: 70%;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="flex">
+        <div class="logo flex">
+            <h1>MY TRAVEL BLOG </h1>
+            <img src="logo.png" alt="">
+        </div>
+        
+        <ul class="flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </header>
+
+    <section class="travel-intro flex">
+        <main class="flex">
+            <div class="info flex">
+                <h1>Welcome to the Adventures</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur accusantium voluptate temporibus sed, voluptatem deleniti ratione exercitationem odio dignissimos odit quibusdam? Cumque, excepturi vel similique provident magnam aliquid ipsa quidem.</p>
+            </div>
+
+            <img src="photo.jpeg" alt="">
+        </main>
+
+        <div class="container flex">
+            <h1>Top 3 Travel Destinations</h1>
+
+            <table>
+                <tr>
+                    <th>Country</th>
+                    <th>Best time to Visit</th>
+                    <th>Language</th>
+                </tr>
+                <tr>
+                    <td><kbd>JP</kbd> Japan</td>
+                    <td>March-May (Spring)</td>
+                    <td>Japanese</td>
+                </tr>
+                <tr>
+                    <td><kbd>IS</kbd> Iceland</td>
+                    <td>June-August (Summer)</td>
+                    <td>Icelandic</td>
+                </tr>
+                <tr>
+                    <td><kbd>PE</kbd> Peru</td>
+                    <td>May-September (Dry Season)</td>
+                    <td>Spanish, Quechua</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="quote">
+            <i>The world is book and who do not travel read only one page</i>
+            <p>-Saint Augustine</p>
+        </div>
+
+        <div class="video-exp flex">
+            <h1>My Latest Adventure</h1>
+
+            <video controls>
+                <source src="smoke.mp4">
+            </video>
+        </div>
+    </section>
+
+
+</body>
+</html>
